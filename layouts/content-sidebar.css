@@ -18,6 +18,11 @@
 	padding-bottom: 0;
 }
 
+.header-image {
+	clear: both;
+	width: 100%;
+}
+
 .content-area {
 	float: left;
 	margin: 0 -25% 0 0;

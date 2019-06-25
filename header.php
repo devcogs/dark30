@@ -42,7 +42,9 @@
 				?>
 				<p class="site-description"><?php echo $dark30_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
+			
 		</div><!-- .site-branding -->
+
 		<button class="menu-toggle toggled" aria-controls="primary-menu" aria-expanded="false">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -56,6 +58,11 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+		<?php if ( has_header_image() ): ?>
+		<div class="header-image">
+			<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+		</div>
+		<?php endif; ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
