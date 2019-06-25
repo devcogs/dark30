@@ -27,4 +27,4 @@ A dark deep purple theme with good contrast for easy viewing.
  * Click Install Now
  * Activate Theme
 
- Thank you for choosing a DevCogs theme!
+ Thank you for choosing a [DevCogs](https://cogs.dev) theme! :tada:
