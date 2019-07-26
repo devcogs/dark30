@@ -61,7 +61,7 @@ if ( ! function_exists( 'dark30_setup' ) ) :
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'dark30_custom_background_args', array(
-			'default-color' => 'ffffff',
+			'default-color' => '564f6f',
 			'default-image' => '',
 		) ) );
 

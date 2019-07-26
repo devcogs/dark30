@@ -40,7 +40,7 @@
 			$dark30_description = get_bloginfo( 'description', 'display' );
 			if ( $dark30_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $dark30_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo esc_html( $dark30_description ); /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 			
 		</div><!-- .site-branding -->

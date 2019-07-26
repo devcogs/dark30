@@ -4,7 +4,7 @@ Theme URI: https://cogs.dev/wp/dark30-theme
 Author: DevCogs
 Author URI: https://cogs.dev
 Description: A dark deep purple theme with good contrast for easy viewing.
-Version: 1.1.0
+Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: dark30
@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Print
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -468,8 +469,7 @@ html {
 }
 
 body {
-	background: #fff;
-	/* Fallback for when there is no custom background color defined. */
+	background: #564f6f;
 }
 
 hr {
@@ -488,13 +488,13 @@ ul {
 }
 
 ol {
-	list-style: decimal;
+	list-style: none;
 }
 
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 0.01em;
 }
 
 dt {
@@ -601,7 +601,9 @@ textarea:focus {
 }
 
 select {
-	border: 1px solid #ccc;
+	background-color: #564f6f;
+	border: 1px solid #2d283e;
+
 }
 
 textarea {
@@ -639,9 +641,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Palette
 --------------------------------------------------------------*/
-body {
-	background-color: #564f6f;
-}
 
 .site {
 	background-color: #2d283e;
@@ -1120,4 +1119,20 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+# Print
+--------------------------------------------------------------*/
+
+@media print {
+	body {
+		color: #222;
+	}
+	.menu-toggle,
+	.main-navigation,
+	.widget-area,
+	.comment-respond {
+		display: none;
+	}
 }

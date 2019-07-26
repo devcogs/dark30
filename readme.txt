@@ -29,6 +29,15 @@ dark30 includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+= 1.2.0 - July 25 2019 =
+* Update styles
+  * select
+  * comments list style
+  * list indention
+  * print styles
+* html escape functions in comments.php and header.php
+* remove rtl.css
+
 = 1.1.0 - June 24 2019 =
 * Development/Review Fixes
 
